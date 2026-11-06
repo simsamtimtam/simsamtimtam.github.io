@@ -12,7 +12,7 @@ body {
 #loader {
     position: fixed;
     inset: 0;
-    background: #000;
+    background: black;
     z-index: 99999;
     animation: curtainReveal 2.5s cubic-bezier(.76, 0, .24, 1) forwards;
     pointer-events: none;
@@ -22,11 +22,12 @@ body {
     0% {
         transform: translateY(0);
     }
-
     100% {
         transform: translateY(-100%);
     }
 }
+
+  
 .header {
   padding: 40px;
   text-align: center;
