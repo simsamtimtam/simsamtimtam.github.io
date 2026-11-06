@@ -4,86 +4,91 @@
 <title>Sam's Website</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <style>
 body {
-  font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Black curtain */
 #loader {
     position: fixed;
-    inset: 0;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
     background: black;
-    z-index: 99999;
-    animation: curtainReveal 2.5s cubic-bezier(.76, 0, .24, 1) forwards;
+    z-index: 999999;
+    animation: curtainReveal 3s ease-in-out forwards;
     pointer-events: none;
 }
 
+/* Curtain moves upwards */
 @keyframes curtainReveal {
-    0% {
+    from {
         transform: translateY(0);
     }
-    100% {
+    to {
         transform: translateY(-100%);
     }
 }
 
-  
 .header {
-  padding: 40px;
-  text-align: center;
-  background: #a8a7a2;
-  color: white;
+    padding: 40px;
+    text-align: center;
+    background: #a8a7a2;
+    color: white;
 }
 
 .header h1 {
-  font-size: 40px;
+    font-size: 40px;
 }
 
 .navbar {
-  overflow: hidden;
-  background-color: #333;
+    overflow: hidden;
+    background-color: #333;
 }
 
-/* Style the navigation bar links */
 .navbar a {
-  float: left;
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 20px;
-  text-decoration: none;
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
 }
 
-/* Right-aligned link */
 .navbar a.right {
-  float: right;
+    float: right;
 }
 
-/* Change color on hover */
 .navbar a:hover {
-  background-color: #ddd;
-  color: black;
+    background-color: #ddd;
+    color: black;
 }
 </style>
 </head>
 
 <body>
-  
+
+<!-- LOADING CURTAIN -->
 <div id="loader"></div>
 
+<!-- WEBSITE CONTENT -->
 <div class="header">
-  <h1>Sam's Website</h1>
-  <p>Very much under construction.</p>
+    <h1>Sam's Website</h1>
+    <p>Very much under construction.</p>
 </div>
-  
 
 <div class="navbar">
-  <a href="#">CV</a>
-  <a href="http://simsamtimtam.github.io/projects">Non-Research Projects</a>
-  <a href="#" class="right">Contact</a>
-  <a href="http://simsamtimtam.github.io/deutsch" class="right">Deutsch</a>
-  
+    <a href="#">CV</a>
+    <a href="https://simsamtimtam.github.io/projects">Non-Research Projects</a>
+    <a href="#" class="right">Contact</a>
+    <a href="https://simsamtimtam.github.io/deutsch" class="right">Deutsch</a>
 </div>
 
-  <p> Hello test test </p>
+<p>Hello test test</p>
+
 </body>
+</html>
